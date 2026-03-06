@@ -6,11 +6,26 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #05001c;
+    background-color: #05001a;
 
 }
 
-/* ---------------- NAV ponto---------------- */
+
+/* ---------------- Fundo1 ---------------- */
+
+.fundo1 {
+    background-color: #09002c;
+
+    border-radius: 0 0 30px 30px;
+}
+
+
+
+
+
+
+
+/* ---------------- NAV ---------------- */
 
 .cabecalho {
     background-color: #0a004a;
@@ -20,11 +35,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    justify-content: center;
 
     @media screen and (min-width: 768px) {
         background-color: transparent;
-
     }
 }
 
@@ -50,8 +63,6 @@ body {
         @media screen and (min-width: 1100px) {
             width: 70%;
         }
-
-
     }
 
 
@@ -68,8 +79,6 @@ body {
         @media screen and (min-width: 768px) {
             border-radius: 50px;
             padding: 5px 0px;
-
-
 
         }
 
@@ -90,18 +99,14 @@ body {
             background-color: rgba(111, 128, 205, 0.395);
 
         }
-
     }
-
-
-
 }
 
 
 
-
-
 /* ---------------- MAIN ---------------- */
+
+
 
 .principal {
     display: flex;
@@ -110,7 +115,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    min-height: 100vh;
+    min-height: 102vh;
 
 }
 
@@ -134,7 +139,6 @@ body {
         @media screen and (min-width: 1100px) {
             gap: 250px;
         }
-
     }
 }
 
@@ -146,33 +150,13 @@ body {
 
 
     :is(h1) {
-        font-size: 21px;
+        font-size: clamp(18px, 3vw, 25px);
         margin-bottom: 5px;
-
-
-        @media screen and (min-width: 768px) {
-            font-size: 23px;
-
-
-            @media screen and (min-width: 1100px) {
-                font-size: 25px;
-            }
-        }
     }
 
     :is(h2) {
-        font-size: 15px;
+        font-size: clamp(13px, 2.5vw, 19px);
         margin-bottom: 5px;
-
-        @media screen and (min-width: 768px) {
-            font-size: 17px;
-
-
-            @media screen and (min-width: 1100px) {
-                font-size: 19px;
-            }
-
-        }
     }
 
     :is(p) {
@@ -228,9 +212,7 @@ body {
             }
         }
 
-
     }
-
 
 }
 
@@ -253,6 +235,155 @@ body {
 
         }
     }
+}
 
 
+
+
+
+
+
+/* ---------------- SOBRE MIM ---------------- */
+
+
+.about {
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 5px 0;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+
+        padding: 100px 20px;
+
+
+        @media screen and (min-width: 1100px) {
+            padding: 70px 20px;
+        }
+    }
+
+
+    .boxAbout {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+
+            padding-bottom: 60px;
+            gap: 40px;
+
+            @media screen and (min-width: 1100px) {
+                padding: 0 0 100px;
+
+                gap: 70px;
+            }
+        }
+    }
+
+    :is(h3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 21px;
+
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 23px;
+
+
+            @media screen and (min-width: 1100px) {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+.img_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    :is(img) {
+        width: 200px;
+        border-radius: 10%;
+        box-shadow: 0 0 60px rgba(55, 0, 255, 0.5);
+
+        @media screen and (min-width: 768px) {
+            width: 230px;
+        }
+    }
+}
+
+
+.infAbout {
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        max-width: 500px;
+
+        @media screen and (min-width: 1100px) {
+            min-width: 500px;
+        }
+    }
+
+
+    :is(h4) {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center;
+
+        font-size: 18px;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 0 0 10px;
+            justify-content: flex-start;
+
+            font-size: 20px;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    :is(p) {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 10px;
+        text-align: justify;
+        font-size: 13px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+    }
 }
