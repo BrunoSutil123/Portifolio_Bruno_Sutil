@@ -7,9 +7,13 @@
     <meta name="description" content="Desenvolvimento de portifólio profissional">
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Portifólio Bruno Sutil</title>
+
+    <script src="/JS/script.js"></script>
+
+    <script type="text/javascript" src="/JS/darkmode.js" defer></script>
 </head>
 
-<body>
+<body class="">
 
     <div class="fundo">
 
@@ -22,6 +26,19 @@
                 <a href="#projetos"><button>Projetos</button></a>
                 <a href="#contatos"><button>Contatos</button></a>
             </nav>
+
+            <button id="mudancaTema">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e3e3e3">
+                    <path
+                        d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e3e3e3">
+                    <path
+                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                </svg>
+            </button>
 
         </header>
 
@@ -80,11 +97,11 @@
     </section>
 
     <div class="fundo2">
-        
+
         <h3 id="habilidades">Habilidades Técnicas</h3>
 
         <section class="habilities_Box">
-            
+
             <article class="skilBox1">
                 <figure class="img_Web">
                     <img src="/IMG/HTML_imagem.png" alt="Ícone de linguagem HTML">
@@ -126,6 +143,75 @@
         </section>
     </div>
 
+
+    <section class="projects">
+
+    </section>
+
+
+    <div class="fundo3" id="contatos">
+        <section class="contact">
+            <article class="infContact">
+                <div class="textContact">
+                    <h3>Entre em contato comigo</h3>
+                    <p>Estou sempre em busca de novos projetos e colaborações criativas. Se você procura um
+                        desenvolvedor web dedicado para dar vida à sua visão e tirar ideias do papel, sinta-se à vontade
+                        para me chamar. Vamos construir algo incrível juntos?</p>
+                </div>
+                <div class="redesContact">
+                    <div class="linkRedes">
+                        <a href="https://github.com/BrunoSutil123" target="_blank"
+                            rel="noopener noreferrer"><button><img src="/IMG/githubIMG.png"
+                                    alt="Ícone do GitHub"></button></a>
+
+                        <a href="https://www.linkedin.com/in/bruno-sutil-068292269/" target="_blank"
+                            rel="noopener noreferrer"><button><img src="/IMG/LinkedinImg.png"
+                                    alt="Ícone do Linkedin"></button></a>
+
+                        <a href="https://www.instagram.com/bruno_sutil_desenhos/" target="_blank"
+                            rel="noopener noreferrer"><button><img src="/IMG/InstagranIcon.png"
+                                    alt="Ícone do Instagran"></button></a>
+                    </div>
+
+                    <div class="dados">
+                        <div class="tell">
+                            <img class="ContactIcon" src="/IMG/call_icon.png" alt="Ícone de telefone">
+                            <p>+55 (11) 95847-8858</p>
+                        </div>
+                        <div class="mail">
+                            <img class="ContactIcon" src="/IMG/mail_icon.png" alt="Ícone do e-mail">
+                            <p>brunosutil30@gmail.com</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="formulario">
+                <div class="campos">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" placeholder="Digite seu nome...">
+
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail...">
+
+                    <label for="nome"></label>
+                    <input type="text" id="nome" placeholder="Digite seu assunto...">
+
+                    <textarea rows="5" cols="50" placeholder="Digite a sua mensagem.."></textarea>
+
+                    <button type="button">Enviar menságem</button>
+
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer class="rodape">
+
+    </footer>
+
 </body>
 
-</html>
+</htm
